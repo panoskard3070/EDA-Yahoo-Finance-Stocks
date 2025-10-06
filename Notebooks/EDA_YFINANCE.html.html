@@ -1,0 +1,2503 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>539bec031c934dbe91a1e074ed48ddbc</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="exploratory-data-analysis-eda-on-ai-sector-stocks"
+class="cell markdown" id="fmK0iQSgWwoK">
+<h1><strong>Exploratory Data Analysis (EDA) on AI Sector
+Stocks</strong></h1>
+<p><strong>Author: Panagiotis Kardatos, Mathematician</strong></p>
+<p>This notebook performs a thorough statistical and mathematical
+analysis of AI Hardware &amp; Cloud Leaders including NVIDIA, GOOGLE,
+META, MICROSOFT over the period 01/01/2025 - Present.</p>
+<p>The goal is to explore the data, understand relationships,
+distributions, trends, and volatility using a purely
+mathematical/statistical perspective, without financial speculation.</p>
+<p><strong>Key objectives:</strong></p>
+<ul>
+<li>Identify trends and patterns in stock prices.</li>
+<li>Quantify volatility, correlations, and statistical properties.</li>
+<li>Provide insights suitable for machine learning feature
+engineering.</li>
+</ul>
+</section>
+<section id="step-1-data-import-and-setup" class="cell markdown"
+id="5WUbpq03bW0r">
+<h2><strong>Step 1: Data Import and Setup</strong></h2>
+<p>We import the necessary libraries (pandas, numpy, matplotlib,
+seaborn, datetime) and download stock data from <strong>Yahoo
+Finance</strong>. We ensure that the dataset is ready for inspection and
+analysis.</p>
+</section>
+<div class="cell code" data-execution_count="88" id="j9VxTI-xcBum">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Importing required libraries.</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime, timedelta</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="89"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="NRLcv_SlcU_y" data-outputId="50c5994d-4511-4cba-ddd8-a120b653aef8">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Getting a first sample to have a view of the column structure.</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>sample <span class="op">=</span> yf.download(tickers<span class="op">=</span><span class="st">&quot;NVDA&quot;</span>, start<span class="op">=</span><span class="st">&quot;2025-01-01&quot;</span>, end<span class="op">=</span><span class="st">&quot;2025-01-5&quot;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>sample.columns</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/tmp/ipython-input-3367788182.py:2: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  sample = yf.download(tickers=&quot;NVDA&quot;, start=&quot;2025-01-01&quot;, end=&quot;2025-01-5&quot;)
+[*********************100%***********************]  1 of 1 completed
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="89">
+<pre><code>MultiIndex([( &#39;Close&#39;, &#39;NVDA&#39;),
+            (  &#39;High&#39;, &#39;NVDA&#39;),
+            (   &#39;Low&#39;, &#39;NVDA&#39;),
+            (  &#39;Open&#39;, &#39;NVDA&#39;),
+            (&#39;Volume&#39;, &#39;NVDA&#39;)],
+           names=[&#39;Price&#39;, &#39;Ticker&#39;])</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="90"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="TPUTn3Yhc-Xe" data-outputId="162f0d7f-010f-404b-fed8-3b4e6e9e5075">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Customizing yesterday&#39;s day, setting the ticker list and download data.</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>yesterday<span class="op">=</span>(datetime.today()<span class="op">-</span>timedelta(days<span class="op">=</span><span class="dv">1</span>)).strftime(<span class="st">&#39;%Y-%m-</span><span class="sc">%d</span><span class="st">&#39;</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>L<span class="op">=</span>[<span class="st">&#39;NVDA&#39;</span>, <span class="st">&#39;GOOGL&#39;</span>, <span class="st">&#39;META&#39;</span>, <span class="st">&#39;MSFT&#39;</span>]</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>data1<span class="op">=</span>{ticker : yf.download(ticker, start<span class="op">=</span><span class="st">&quot;2025-01-01&quot;</span>, end<span class="op">=</span>yesterday)[(<span class="st">&#39;Close&#39;</span>, ticker)] <span class="cf">for</span> ticker <span class="kw">in</span> L} <span class="co">#Close Data</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>data2<span class="op">=</span>{ticker : yf.download(ticker, start<span class="op">=</span><span class="st">&quot;2025-01-01&quot;</span>, end<span class="op">=</span>yesterday)[(<span class="st">&#39;Volume&#39;</span>, ticker)] <span class="cf">for</span> ticker <span class="kw">in</span> L} <span class="co">#Volume Data</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>df1<span class="op">=</span>pd.DataFrame(data1)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>df2<span class="op">=</span>pd.DataFrame(data2)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/tmp/ipython-input-3336821011.py:4: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data1={ticker : yf.download(ticker, start=&quot;2025-01-01&quot;, end=yesterday)[(&#39;Close&#39;, ticker)] for ticker in L} #Close Data
+[*********************100%***********************]  1 of 1 completed
+/tmp/ipython-input-3336821011.py:4: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data1={ticker : yf.download(ticker, start=&quot;2025-01-01&quot;, end=yesterday)[(&#39;Close&#39;, ticker)] for ticker in L} #Close Data
+[*********************100%***********************]  1 of 1 completed
+/tmp/ipython-input-3336821011.py:4: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data1={ticker : yf.download(ticker, start=&quot;2025-01-01&quot;, end=yesterday)[(&#39;Close&#39;, ticker)] for ticker in L} #Close Data
+[*********************100%***********************]  1 of 1 completed
+/tmp/ipython-input-3336821011.py:4: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data1={ticker : yf.download(ticker, start=&quot;2025-01-01&quot;, end=yesterday)[(&#39;Close&#39;, ticker)] for ticker in L} #Close Data
+[*********************100%***********************]  1 of 1 completed
+/tmp/ipython-input-3336821011.py:5: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data2={ticker : yf.download(ticker, start=&quot;2025-01-01&quot;, end=yesterday)[(&#39;Volume&#39;, ticker)] for ticker in L} #Volume Data
+[*********************100%***********************]  1 of 1 completed
+/tmp/ipython-input-3336821011.py:5: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data2={ticker : yf.download(ticker, start=&quot;2025-01-01&quot;, end=yesterday)[(&#39;Volume&#39;, ticker)] for ticker in L} #Volume Data
+[*********************100%***********************]  1 of 1 completed
+/tmp/ipython-input-3336821011.py:5: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data2={ticker : yf.download(ticker, start=&quot;2025-01-01&quot;, end=yesterday)[(&#39;Volume&#39;, ticker)] for ticker in L} #Volume Data
+[*********************100%***********************]  1 of 1 completed
+/tmp/ipython-input-3336821011.py:5: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data2={ticker : yf.download(ticker, start=&quot;2025-01-01&quot;, end=yesterday)[(&#39;Volume&#39;, ticker)] for ticker in L} #Volume Data
+[*********************100%***********************]  1 of 1 completed
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="rMEbcjV0pkjh">
+<p>##<strong>Step 2: Data Inspection</strong></p>
+<p>We examine the dataset to understand its structure and basic
+statistics. This helps to identify any anomalies before proceeding with
+cleaning and analysis.</p>
+</div>
+<div class="cell code" data-execution_count="91"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="PKnaN3zXrIyz" data-outputId="2d088a9b-cf4d-456a-c637-65f8d9e10dcd">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df1.head(), df2.head() <span class="co"># View strucure, starting date</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="91">
+<pre><code>(                  NVDA       GOOGL        META        MSFT
+ Date                                                      
+ 2025-01-02  138.279877  188.814423  597.843567  416.292511
+ 2025-01-03  144.438538  191.166748  603.220947  421.036469
+ 2025-01-06  149.397446  196.230255  628.731384  425.511871
+ 2025-01-07  140.109467  194.854736  616.450073  420.061798
+ 2025-01-08  140.079483  193.319748  609.296753  422.239838,
+                  NVDA     GOOGL      META      MSFT
+ Date                                               
+ 2025-01-02  198247200  20370800  12682300  16896500
+ 2025-01-03  229322500  18596200  11436800  16662900
+ 2025-01-06  265377400  29563600  14560800  20573600
+ 2025-01-07  351782200  26487200  12071500  18139100
+ 2025-01-08  227349900  24864800  10085800  15054600)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="92"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="JKXg3cFPrNfy" data-outputId="43f319d4-b9bd-44e4-c39b-c0390d82b286">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df1.tail(), df2.tail() <span class="co">#To ensure we are up to date</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="92">
+<pre><code>(                  NVDA       GOOGL        META        MSFT
+ Date                                                      
+ 2025-09-29  181.850006  244.050003  743.400024  514.599976
+ 2025-09-30  186.580002  243.100006  734.380005  517.950012
+ 2025-10-01  187.240005  244.899994  717.340027  519.710022
+ 2025-10-02  188.889999  245.690002  727.049988  515.739990
+ 2025-10-03  187.619995  245.350006  710.559998  517.349976,
+                  NVDA     GOOGL      META      MSFT
+ Date                                               
+ 2025-09-29  193063500  32505800   9246800  17617800
+ 2025-09-30  236981000  34724300  16226800  19728200
+ 2025-10-01  173844900  31658200  20419600  22632300
+ 2025-10-02  136805800  25483300  11415300  21222900
+ 2025-10-03  137340500  30232900  16110000  15104200)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="93"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="3ir66BlbsaAi" data-outputId="4bb68a0f-550a-4dc9-8579-ef14e5ce4fe9">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Check for data types and shapes (shapes must be equal) for all DataFrames</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>df1.info() , df2.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+DatetimeIndex: 189 entries, 2025-01-02 to 2025-10-03
+Data columns (total 4 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   NVDA    189 non-null    float64
+ 1   GOOGL   189 non-null    float64
+ 2   META    189 non-null    float64
+ 3   MSFT    189 non-null    float64
+dtypes: float64(4)
+memory usage: 7.4 KB
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+DatetimeIndex: 189 entries, 2025-01-02 to 2025-10-03
+Data columns (total 4 columns):
+ #   Column  Non-Null Count  Dtype
+---  ------  --------------  -----
+ 0   NVDA    189 non-null    int64
+ 1   GOOGL   189 non-null    int64
+ 2   META    189 non-null    int64
+ 3   MSFT    189 non-null    int64
+dtypes: int64(4)
+memory usage: 7.4 KB
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="93">
+<pre><code>(None, None)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="94"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="YXY41fs7s6kB" data-outputId="57348eb0-1cbf-40cf-dc0f-b43cf8bf8a21">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Check for missing values in columns.</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>df1.isnull().<span class="bu">sum</span>(), df2.isnull().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="94">
+<pre><code>(NVDA     0
+ GOOGL    0
+ META     0
+ MSFT     0
+ dtype: int64,
+ NVDA     0
+ GOOGL    0
+ META     0
+ MSFT     0
+ dtype: int64)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="95"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="VH5RqTXuuvWh" data-outputId="29511db2-02b5-4224-a6b5-6ab988c1b153">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Basic Statistics</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>df1.describe(), df2.describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="95">
+<pre><code>(             NVDA       GOOGL        META        MSFT
+ count  189.000000  189.000000  189.000000  189.000000
+ mean   143.511254  185.783283  670.095689  451.743571
+ std     26.657678   26.978830   74.847155   52.579908
+ min     94.298134  144.395889  483.960724  353.329437
+ 25%    118.624161  165.830750  611.341980  406.197968
+ 50%    139.972397  179.076172  687.573914  453.524445
+ 75%    171.370346  197.336655  727.049988  504.890015
+ max    188.889999  254.720001  789.467163  534.760925,
+                NVDA         GOOGL          META          MSFT
+ count  1.890000e+02  1.890000e+02  1.890000e+02  1.890000e+02
+ mean   2.318247e+08  3.644928e+07  1.459436e+07  2.202557e+07
+ std    1.005179e+08  1.581316e+07  6.310753e+06  8.202114e+06
+ min    1.223168e+08  1.717490e+07  6.743500e+06  1.184660e+07
+ 25%    1.630128e+08  2.738580e+07  1.008580e+07  1.657940e+07
+ 50%    2.076025e+08  3.199590e+07  1.299800e+07  1.994540e+07
+ 75%    2.632345e+08  4.172890e+07  1.709890e+07  2.361880e+07
+ max    8.188309e+08  1.274901e+08  3.921660e+07  5.893810e+07)</code></pre>
+</div>
+</div>
+<section id="step-3-data-cleaning-and-preprocessing"
+class="cell markdown" id="Mo0Efemz_ZEV">
+<h2><strong>Step 3: Data Cleaning and Preprocessing</strong></h2>
+<p>Before analysis, we clean the data. Since data come from yfinance
+they don't need much cleaning, however we need to be sure about:</p>
+<ul>
+<li>Missing values (was checked on step 2)</li>
+<li>Duplicate entries.</li>
+<li>Date index for all Dataframes is <code>datetime</code> object.</li>
+<li>Ensure numeric columns (Close, High, Low, Volume) are of type
+(float/float/float/int).</li>
+</ul>
+<p>At this stage, the dataset becomes ready for analysis.</p>
+</section>
+<div class="cell code" data-execution_count="96"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="0-UEe3aLBihw" data-outputId="e633a2f3-0f92-4d50-edcc-d1fe102f1fbb">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Check for Duplicate entries (whole rows)</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>df1.duplicated().<span class="bu">sum</span>(), df2.duplicated().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="96">
+<pre><code>(np.int64(0), np.int64(0))</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="97"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="MGR4sBwnCaDF" data-outputId="83a50cfe-d7c2-458b-f429-1e8abbc5135e">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Date Index is Datetime object</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>df1.index<span class="op">=</span>pd.to_datetime(df1.index)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>df2.index<span class="op">=</span>pd.to_datetime(df2.index)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>df1.index, df2.index</span></code></pre></div>
+<div class="output execute_result" data-execution_count="97">
+<pre><code>(DatetimeIndex([&#39;2025-01-02&#39;, &#39;2025-01-03&#39;, &#39;2025-01-06&#39;, &#39;2025-01-07&#39;,
+                &#39;2025-01-08&#39;, &#39;2025-01-10&#39;, &#39;2025-01-13&#39;, &#39;2025-01-14&#39;,
+                &#39;2025-01-15&#39;, &#39;2025-01-16&#39;,
+                ...
+                &#39;2025-09-22&#39;, &#39;2025-09-23&#39;, &#39;2025-09-24&#39;, &#39;2025-09-25&#39;,
+                &#39;2025-09-26&#39;, &#39;2025-09-29&#39;, &#39;2025-09-30&#39;, &#39;2025-10-01&#39;,
+                &#39;2025-10-02&#39;, &#39;2025-10-03&#39;],
+               dtype=&#39;datetime64[ns]&#39;, name=&#39;Date&#39;, length=189, freq=None),
+ DatetimeIndex([&#39;2025-01-02&#39;, &#39;2025-01-03&#39;, &#39;2025-01-06&#39;, &#39;2025-01-07&#39;,
+                &#39;2025-01-08&#39;, &#39;2025-01-10&#39;, &#39;2025-01-13&#39;, &#39;2025-01-14&#39;,
+                &#39;2025-01-15&#39;, &#39;2025-01-16&#39;,
+                ...
+                &#39;2025-09-22&#39;, &#39;2025-09-23&#39;, &#39;2025-09-24&#39;, &#39;2025-09-25&#39;,
+                &#39;2025-09-26&#39;, &#39;2025-09-29&#39;, &#39;2025-09-30&#39;, &#39;2025-10-01&#39;,
+                &#39;2025-10-02&#39;, &#39;2025-10-03&#39;],
+               dtype=&#39;datetime64[ns]&#39;, name=&#39;Date&#39;, length=189, freq=None))</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="98"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="hbYmjFeaDT19" data-outputId="b0cfa928-55a0-4fa6-de5f-6bbc2aaa3596">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Be sure to have the correct data type</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>df1.dtypes, df2.dtypes</span></code></pre></div>
+<div class="output execute_result" data-execution_count="98">
+<pre><code>(NVDA     float64
+ GOOGL    float64
+ META     float64
+ MSFT     float64
+ dtype: object,
+ NVDA     int64
+ GOOGL    int64
+ META     int64
+ MSFT     int64
+ dtype: object)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="99" id="Px1dsaN-Pwf7">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Time Sorting</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>df1.sort_index(inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>df2.sort_index(inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<section id="step-4-feature-engineering" class="cell markdown"
+id="AezujWiWFwKF">
+<h2><strong>Step 4: Feature Engineering</strong></h2>
+<p>We create new features useful for mathematical and statistical
+analysis:</p>
+<ul>
+<li>Daily returns</li>
+<li>Cumulative returns to observe long-term trends.</li>
+<li>Rolling mean and rolling standard deviation to capture local trends
+and volatility.</li>
+<li>Daily Returns and Volume Outliers</li>
+<li>(Day and Month Dummies for ML)</li>
+</ul>
+</section>
+<div class="cell code" data-execution_count="100"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:0}"
+id="ucBow0ohGSh6" data-outputId="664295fb-7bb9-422d-e9dd-c381e48c327a">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Daily Returns</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>df1_returns <span class="op">=</span> df1.pct_change()</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>df1_returns.fillna(<span class="dv">0</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>df1_returns.isnull().<span class="bu">sum</span>() <span class="co">#Check if we have further null values and we are set.</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="100">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>NVDA</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>GOOGL</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>META</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>MSFT</th>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><label><b>dtype:</b> int64</label>
+</div>
+</div>
+<div class="cell code" data-execution_count="101"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:0}"
+id="wXWZO0wGH2Sz" data-outputId="33db3453-e05e-4380-f609-cf5ccbffebbf">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Cumulative Returns</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>df1_cum_returns<span class="op">=</span>(<span class="dv">1</span><span class="op">+</span>df1_returns).cumprod()<span class="op">-</span><span class="dv">1</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>df1_cum_returns.tail()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="101">
+
+  <div id="df-1b8a87f7-71e8-4ddf-b1d7-d150c552e870" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>NVDA</th>
+      <th>GOOGL</th>
+      <th>META</th>
+      <th>MSFT</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2025-09-29</th>
+      <td>0.315087</td>
+      <td>0.292539</td>
+      <td>0.243469</td>
+      <td>0.236150</td>
+    </tr>
+    <tr>
+      <th>2025-09-30</th>
+      <td>0.349293</td>
+      <td>0.287508</td>
+      <td>0.228382</td>
+      <td>0.244197</td>
+    </tr>
+    <tr>
+      <th>2025-10-01</th>
+      <td>0.354065</td>
+      <td>0.297041</td>
+      <td>0.199879</td>
+      <td>0.248425</td>
+    </tr>
+    <tr>
+      <th>2025-10-02</th>
+      <td>0.365998</td>
+      <td>0.301225</td>
+      <td>0.216121</td>
+      <td>0.238888</td>
+    </tr>
+    <tr>
+      <th>2025-10-03</th>
+      <td>0.356813</td>
+      <td>0.299424</td>
+      <td>0.188538</td>
+      <td>0.242756</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-1b8a87f7-71e8-4ddf-b1d7-d150c552e870')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-1b8a87f7-71e8-4ddf-b1d7-d150c552e870 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-1b8a87f7-71e8-4ddf-b1d7-d150c552e870');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-9aa79a09-b9c6-4bb0-95f8-f708e4f74118">
+      <button class="colab-df-quickchart" onclick="quickchart('df-9aa79a09-b9c6-4bb0-95f8-f708e4f74118')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-9aa79a09-b9c6-4bb0-95f8-f708e4f74118 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="102"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:0}"
+id="t93YgLoPKI4b" data-outputId="40e80e0f-6787-4ff3-ffee-d843af715285">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Rolling Mean</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>df1_rolling_mean<span class="op">=</span>df1.rolling(window<span class="op">=</span><span class="dv">10</span>).mean()</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>df1_rolling_mean.tail()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="102">
+
+  <div id="df-7c9aab7d-41c3-418d-aebd-7a7e3122b791" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>NVDA</th>
+      <th>GOOGL</th>
+      <th>META</th>
+      <th>MSFT</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2025-09-29</th>
+      <td>177.482001</td>
+      <td>249.514999</td>
+      <td>762.853003</td>
+      <td>511.235999</td>
+    </tr>
+    <tr>
+      <th>2025-09-30</th>
+      <td>178.652000</td>
+      <td>248.709000</td>
+      <td>758.443549</td>
+      <td>512.126999</td>
+    </tr>
+    <tr>
+      <th>2025-10-01</th>
+      <td>180.347002</td>
+      <td>248.245999</td>
+      <td>752.657874</td>
+      <td>513.096002</td>
+    </tr>
+    <tr>
+      <th>2025-10-02</th>
+      <td>181.612001</td>
+      <td>247.612000</td>
+      <td>747.390497</td>
+      <td>513.825000</td>
+    </tr>
+    <tr>
+      <th>2025-10-03</th>
+      <td>182.707001</td>
+      <td>246.675000</td>
+      <td>740.660999</td>
+      <td>513.766998</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-7c9aab7d-41c3-418d-aebd-7a7e3122b791')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-7c9aab7d-41c3-418d-aebd-7a7e3122b791 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-7c9aab7d-41c3-418d-aebd-7a7e3122b791');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-dea35ee3-749a-4e84-9a03-b5697e35ca00">
+      <button class="colab-df-quickchart" onclick="quickchart('df-dea35ee3-749a-4e84-9a03-b5697e35ca00')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-dea35ee3-749a-4e84-9a03-b5697e35ca00 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="103"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:0}"
+id="5PedBKLCSFjp" data-outputId="d61bb889-6587-4594-c995-f60c591f9d18">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Rolling standard variation</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>df1_rolling_std<span class="op">=</span>df1.rolling(window<span class="op">=</span><span class="dv">10</span>).std()</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>df1_rolling_std.tail()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="103">
+
+  <div id="df-65262980-b8b9-4512-8082-08a4eb05a8a0" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>NVDA</th>
+      <th>GOOGL</th>
+      <th>META</th>
+      <th>MSFT</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2025-09-29</th>
+      <td>3.636764</td>
+      <td>3.464870</td>
+      <td>14.565990</td>
+      <td>3.390551</td>
+    </tr>
+    <tr>
+      <th>2025-09-30</th>
+      <td>4.488859</td>
+      <td>3.944021</td>
+      <td>15.922586</td>
+      <td>3.884146</td>
+    </tr>
+    <tr>
+      <th>2025-10-01</th>
+      <td>4.169320</td>
+      <td>4.105396</td>
+      <td>19.309891</td>
+      <td>4.465328</td>
+    </tr>
+    <tr>
+      <th>2025-10-02</th>
+      <td>4.673355</td>
+      <td>3.942410</td>
+      <td>18.262276</td>
+      <td>4.210351</td>
+    </tr>
+    <tr>
+      <th>2025-10-03</th>
+      <td>4.669578</td>
+      <td>3.085749</td>
+      <td>18.187712</td>
+      <td>4.151095</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-65262980-b8b9-4512-8082-08a4eb05a8a0')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-65262980-b8b9-4512-8082-08a4eb05a8a0 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-65262980-b8b9-4512-8082-08a4eb05a8a0');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-ecf79689-777d-4185-bd2b-c58ff84f4bfd">
+      <button class="colab-df-quickchart" onclick="quickchart('df-ecf79689-777d-4185-bd2b-c58ff84f4bfd')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-ecf79689-777d-4185-bd2b-c58ff84f4bfd button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="104"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="NDZvlNOaWH2A" data-outputId="70bb74e0-34d3-4107-cef2-b296c94ba888">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Daily Returns &amp; Volume Standarization + Outliers</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Returns Standarization</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>mr<span class="op">=</span>df1_returns.mean()</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>sr<span class="op">=</span>df1_returns.std()</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>df1_returns_standarized<span class="op">=</span>(df1_returns<span class="op">-</span>mr)<span class="op">/</span>sr</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>df1_returns.tail()</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="co">#Volume Standarization</span></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>mv<span class="op">=</span>df2.mean()</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>sv<span class="op">=</span>df2.std()</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>df2_volume_standarized<span class="op">=</span>(df2<span class="op">-</span>mv)<span class="op">/</span>sv</span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>df2_volume_standarized</span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a><span class="co">#Returns Outliers</span></span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>df1_returns_outliers<span class="op">=</span>((df1_returns_standarized<span class="op">&lt;-</span><span class="dv">2</span>)<span class="op">|</span>(df1_returns_standarized<span class="op">&gt;</span><span class="dv">2</span>))</span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a><span class="co">#Volume Outliers</span></span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>df2_volume_outliers<span class="op">=</span>((df2_volume_standarized<span class="op">&lt;-</span><span class="dv">2</span>)<span class="op">|</span>(df2_volume_standarized<span class="op">&gt;</span><span class="dv">2</span>))</span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a><span class="co">#Results</span></span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a>df1_returns_outliers.<span class="bu">sum</span>(), df2_volume_outliers.<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="104">
+<pre><code>(NVDA     8
+ GOOGL    9
+ META     6
+ MSFT     9
+ dtype: int64,
+ NVDA      9
+ GOOGL    10
+ META     11
+ MSFT      8
+ dtype: int64)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="105"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Ej_skqfXc64L" data-outputId="7014c8d2-ee30-4afc-b38c-58a4cd347ac7">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Day \ Month Dummies</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>df1_dummies<span class="op">=</span>df1.copy()</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>df1_dummies[<span class="st">&#39;Day&#39;</span>]<span class="op">=</span>df1_dummies.index.dayofweek</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>df1_dummies[<span class="st">&#39;Month&#39;</span>]<span class="op">=</span>df1_dummies.index.month</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>df1_dummies<span class="op">=</span>pd.get_dummies(df1_dummies, columns<span class="op">=</span>[<span class="st">&#39;Day&#39;</span>, <span class="st">&#39;Month&#39;</span>])</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>df1_dummies</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>, <span class="bu">len</span>(df1_dummies.columns)):</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>    df1_dummies.iloc[:, i] <span class="op">=</span> df1_dummies.iloc[:, i].astype(<span class="bu">int</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/tmp/ipython-input-4050051165.py:9: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;Date
+2025-01-02    0
+2025-01-03    0
+2025-01-06    0
+2025-01-07    0
+2025-01-08    1
+             ..
+2025-09-29    0
+2025-09-30    0
+2025-10-01    1
+2025-10-02    0
+2025-10-03    0
+Name: Day_2, Length: 189, dtype: int64&#39; has dtype incompatible with bool, please explicitly cast to a compatible dtype first.
+  df1_dummies.iloc[:, i] = df1_dummies.iloc[:, i].astype(int)
+/tmp/ipython-input-4050051165.py:9: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;Date
+2025-01-02    1
+2025-01-03    0
+2025-01-06    0
+2025-01-07    0
+2025-01-08    0
+             ..
+2025-09-29    0
+2025-09-30    0
+2025-10-01    0
+2025-10-02    1
+2025-10-03    0
+Name: Day_3, Length: 189, dtype: int64&#39; has dtype incompatible with bool, please explicitly cast to a compatible dtype first.
+  df1_dummies.iloc[:, i] = df1_dummies.iloc[:, i].astype(int)
+/tmp/ipython-input-4050051165.py:9: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;Date
+2025-01-02    0
+2025-01-03    1
+2025-01-06    0
+2025-01-07    0
+2025-01-08    0
+             ..
+2025-09-29    0
+2025-09-30    0
+2025-10-01    0
+2025-10-02    0
+2025-10-03    1
+Name: Day_4, Length: 189, dtype: int64&#39; has dtype incompatible with bool, please explicitly cast to a compatible dtype first.
+  df1_dummies.iloc[:, i] = df1_dummies.iloc[:, i].astype(int)
+/tmp/ipython-input-4050051165.py:9: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;Date
+2025-01-02    1
+2025-01-03    1
+2025-01-06    1
+2025-01-07    1
+2025-01-08    1
+             ..
+2025-09-29    0
+2025-09-30    0
+2025-10-01    0
+2025-10-02    0
+2025-10-03    0
+Name: Month_1, Length: 189, dtype: int64&#39; has dtype incompatible with bool, please explicitly cast to a compatible dtype first.
+  df1_dummies.iloc[:, i] = df1_dummies.iloc[:, i].astype(int)
+/tmp/ipython-input-4050051165.py:9: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;Date
+2025-01-02    0
+2025-01-03    0
+2025-01-06    0
+2025-01-07    0
+2025-01-08    0
+             ..
+2025-09-29    0
+2025-09-30    0
+2025-10-01    0
+2025-10-02    0
+2025-10-03    0
+Name: Month_2, Length: 189, dtype: int64&#39; has dtype incompatible with bool, please explicitly cast to a compatible dtype first.
+  df1_dummies.iloc[:, i] = df1_dummies.iloc[:, i].astype(int)
+/tmp/ipython-input-4050051165.py:9: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;Date
+2025-01-02    0
+2025-01-03    0
+2025-01-06    0
+2025-01-07    0
+2025-01-08    0
+             ..
+2025-09-29    0
+2025-09-30    0
+2025-10-01    0
+2025-10-02    0
+2025-10-03    0
+Name: Month_3, Length: 189, dtype: int64&#39; has dtype incompatible with bool, please explicitly cast to a compatible dtype first.
+  df1_dummies.iloc[:, i] = df1_dummies.iloc[:, i].astype(int)
+/tmp/ipython-input-4050051165.py:9: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;Date
+2025-01-02    0
+2025-01-03    0
+2025-01-06    0
+2025-01-07    0
+2025-01-08    0
+             ..
+2025-09-29    0
+2025-09-30    0
+2025-10-01    0
+2025-10-02    0
+2025-10-03    0
+Name: Month_4, Length: 189, dtype: int64&#39; has dtype incompatible with bool, please explicitly cast to a compatible dtype first.
+  df1_dummies.iloc[:, i] = df1_dummies.iloc[:, i].astype(int)
+/tmp/ipython-input-4050051165.py:9: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;Date
+2025-01-02    0
+2025-01-03    0
+2025-01-06    0
+2025-01-07    0
+2025-01-08    0
+             ..
+2025-09-29    0
+2025-09-30    0
+2025-10-01    0
+2025-10-02    0
+2025-10-03    0
+Name: Month_5, Length: 189, dtype: int64&#39; has dtype incompatible with bool, please explicitly cast to a compatible dtype first.
+  df1_dummies.iloc[:, i] = df1_dummies.iloc[:, i].astype(int)
+/tmp/ipython-input-4050051165.py:9: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;Date
+2025-01-02    0
+2025-01-03    0
+2025-01-06    0
+2025-01-07    0
+2025-01-08    0
+             ..
+2025-09-29    0
+2025-09-30    0
+2025-10-01    0
+2025-10-02    0
+2025-10-03    0
+Name: Month_6, Length: 189, dtype: int64&#39; has dtype incompatible with bool, please explicitly cast to a compatible dtype first.
+  df1_dummies.iloc[:, i] = df1_dummies.iloc[:, i].astype(int)
+/tmp/ipython-input-4050051165.py:9: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;Date
+2025-01-02    0
+2025-01-03    0
+2025-01-06    0
+2025-01-07    0
+2025-01-08    0
+             ..
+2025-09-29    0
+2025-09-30    0
+2025-10-01    0
+2025-10-02    0
+2025-10-03    0
+Name: Month_7, Length: 189, dtype: int64&#39; has dtype incompatible with bool, please explicitly cast to a compatible dtype first.
+  df1_dummies.iloc[:, i] = df1_dummies.iloc[:, i].astype(int)
+/tmp/ipython-input-4050051165.py:9: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;Date
+2025-01-02    0
+2025-01-03    0
+2025-01-06    0
+2025-01-07    0
+2025-01-08    0
+             ..
+2025-09-29    0
+2025-09-30    0
+2025-10-01    0
+2025-10-02    0
+2025-10-03    0
+Name: Month_8, Length: 189, dtype: int64&#39; has dtype incompatible with bool, please explicitly cast to a compatible dtype first.
+  df1_dummies.iloc[:, i] = df1_dummies.iloc[:, i].astype(int)
+/tmp/ipython-input-4050051165.py:9: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;Date
+2025-01-02    0
+2025-01-03    0
+2025-01-06    0
+2025-01-07    0
+2025-01-08    0
+             ..
+2025-09-29    1
+2025-09-30    1
+2025-10-01    0
+2025-10-02    0
+2025-10-03    0
+Name: Month_9, Length: 189, dtype: int64&#39; has dtype incompatible with bool, please explicitly cast to a compatible dtype first.
+  df1_dummies.iloc[:, i] = df1_dummies.iloc[:, i].astype(int)
+/tmp/ipython-input-4050051165.py:9: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;Date
+2025-01-02    0
+2025-01-03    0
+2025-01-06    0
+2025-01-07    0
+2025-01-08    0
+             ..
+2025-09-29    0
+2025-09-30    0
+2025-10-01    1
+2025-10-02    1
+2025-10-03    1
+Name: Month_10, Length: 189, dtype: int64&#39; has dtype incompatible with bool, please explicitly cast to a compatible dtype first.
+  df1_dummies.iloc[:, i] = df1_dummies.iloc[:, i].astype(int)
+</code></pre>
+</div>
+</div>
+<section id="step-5-statistical-analysis" class="cell markdown"
+id="GAkYTDIK8fVJ">
+<h2><strong>Step 5: Statistical Analysis</strong></h2>
+<p>We quantify key mathematical properties:</p>
+<ul>
+<li>Mean, Variance, Standard Deviation → General Image</li>
+<li>Skewness and Kurtosis for Returns → shape of the distribution.</li>
+<li>Correlation and Covariance → relationships between stocks.</li>
+<li>Autocorrelation → temporal dependencies within each stock's
+returns.</li>
+</ul>
+<p>This step allows us to understand statistical patterns and
+dependencies for ML feature selection.</p>
+</section>
+<div class="cell code" data-execution_count="106"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="_hMLcHc28pof" data-outputId="72bbb081-d6b2-4af2-b84e-6fc647c6a9f2">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Mean, Variance, Standard Deviation and more.</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>df1.describe(), df2.describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="106">
+<pre><code>(             NVDA       GOOGL        META        MSFT
+ count  189.000000  189.000000  189.000000  189.000000
+ mean   143.511254  185.783283  670.095689  451.743571
+ std     26.657678   26.978830   74.847155   52.579908
+ min     94.298134  144.395889  483.960724  353.329437
+ 25%    118.624161  165.830750  611.341980  406.197968
+ 50%    139.972397  179.076172  687.573914  453.524445
+ 75%    171.370346  197.336655  727.049988  504.890015
+ max    188.889999  254.720001  789.467163  534.760925,
+                NVDA         GOOGL          META          MSFT
+ count  1.890000e+02  1.890000e+02  1.890000e+02  1.890000e+02
+ mean   2.318247e+08  3.644928e+07  1.459436e+07  2.202557e+07
+ std    1.005179e+08  1.581316e+07  6.310753e+06  8.202114e+06
+ min    1.223168e+08  1.717490e+07  6.743500e+06  1.184660e+07
+ 25%    1.630128e+08  2.738580e+07  1.008580e+07  1.657940e+07
+ 50%    2.076025e+08  3.199590e+07  1.299800e+07  1.994540e+07
+ 75%    2.632345e+08  4.172890e+07  1.709890e+07  2.361880e+07
+ max    8.188309e+08  1.274901e+08  3.921660e+07  5.893810e+07)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="107" id="E8N5SY1t8v8B">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Skewness and Kurtosis</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>df1_returns_skewness<span class="op">=</span>df1_returns.rolling(window<span class="op">=</span><span class="dv">10</span>).skew()</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>df1_returns_kurtosis<span class="op">=</span>df1_returns.rolling(window<span class="op">=</span><span class="dv">10</span>).kurt()</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="108"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:0}"
+id="PW2CFG8Y8yw8" data-outputId="0f90c3be-5c25-4ed3-8357-14f95642c16e">
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Autocorrelation with lags 0-10</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="co">#The idea is to construct a dictionary then create a Dataframe directly from it</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>Lags<span class="op">=</span>{}</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> lag <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">11</span>):</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>  Lags[<span class="ss">f&#39;Day </span><span class="sc">{</span>lag<span class="sc">}</span><span class="ss">&#39;</span>]<span class="op">=</span>df1_returns.<span class="bu">apply</span>(<span class="kw">lambda</span> x: x.autocorr(lag<span class="op">=</span>lag)).values</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>df_autocorr<span class="op">=</span>pd.DataFrame(Lags, index<span class="op">=</span>L)</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>df_autocorr</span></code></pre></div>
+<div class="output execute_result" data-execution_count="108">
+
+  <div id="df-968d2664-5051-4ee1-a281-8b10f448eb23" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Day 1</th>
+      <th>Day 2</th>
+      <th>Day 3</th>
+      <th>Day 4</th>
+      <th>Day 5</th>
+      <th>Day 6</th>
+      <th>Day 7</th>
+      <th>Day 8</th>
+      <th>Day 9</th>
+      <th>Day 10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>NVDA</th>
+      <td>-0.140471</td>
+      <td>0.153947</td>
+      <td>-0.170856</td>
+      <td>-0.068047</td>
+      <td>-0.036870</td>
+      <td>0.069221</td>
+      <td>-0.109494</td>
+      <td>0.038695</td>
+      <td>-0.044715</td>
+      <td>0.021968</td>
+    </tr>
+    <tr>
+      <th>GOOGL</th>
+      <td>-0.077495</td>
+      <td>0.131099</td>
+      <td>-0.114134</td>
+      <td>-0.113047</td>
+      <td>-0.045953</td>
+      <td>0.070977</td>
+      <td>0.023632</td>
+      <td>0.039005</td>
+      <td>0.021172</td>
+      <td>-0.060523</td>
+    </tr>
+    <tr>
+      <th>META</th>
+      <td>-0.109428</td>
+      <td>0.099616</td>
+      <td>-0.076569</td>
+      <td>-0.090526</td>
+      <td>0.004778</td>
+      <td>0.132306</td>
+      <td>0.000618</td>
+      <td>0.057797</td>
+      <td>-0.017954</td>
+      <td>0.012608</td>
+    </tr>
+    <tr>
+      <th>MSFT</th>
+      <td>-0.059676</td>
+      <td>0.081965</td>
+      <td>-0.165461</td>
+      <td>0.008296</td>
+      <td>-0.028760</td>
+      <td>0.053629</td>
+      <td>0.004257</td>
+      <td>0.011734</td>
+      <td>0.025477</td>
+      <td>-0.018722</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-968d2664-5051-4ee1-a281-8b10f448eb23')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-968d2664-5051-4ee1-a281-8b10f448eb23 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-968d2664-5051-4ee1-a281-8b10f448eb23');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-ab10612b-7847-43ca-8c36-d0e0a21da068">
+      <button class="colab-df-quickchart" onclick="quickchart('df-ab10612b-7847-43ca-8c36-d0e0a21da068')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-ab10612b-7847-43ca-8c36-d0e0a21da068 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+  <div id="id_38cf61e9-68b8-4df5-a789-e4eb241a93da">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('df_autocorr')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_38cf61e9-68b8-4df5-a789-e4eb241a93da button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('df_autocorr');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<section id="step-6-visualization" class="cell markdown"
+id="Si7-W3CC87sI">
+<h2><strong>Step 6: Visualization</strong></h2>
+<p>We create plots to visually inspect trends and distributions:</p>
+<ul>
+<li>Line plots for stock prices returns, cumulative returns and
+more.</li>
+<li>Scatterplots to detect outliers and distribution spread.</li>
+<li>Histograms and density plots for distributions.</li>
+<li>Heatmaps to visualize correlations.</li>
+</ul>
+<p>All graphs are annotated with clear labels, titles, and legends.</p>
+</section>
+<div class="cell markdown" id="muQr5DcH_KU7">
+<p>###<strong>Time Series Plot</strong></p>
+</div>
+<div class="cell code" data-execution_count="109"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:0}"
+id="yrbAsixd_S7x" data-outputId="a0e32aea-7bf8-44be-d03a-7b44cd4aa01d">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Daily Prices</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Annotations</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>nvidia<span class="op">=</span>[(datetime(<span class="dv">2025</span>,<span class="dv">1</span>,<span class="dv">4</span>), <span class="st">&#39;     RTX 5000 series launch announcement</span><span class="ch">\n</span><span class="st">followed by performance-price dissapointment&#39;</span>),</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>        (datetime(<span class="dv">2025</span>,<span class="dv">1</span>,<span class="dv">27</span>), <span class="st">&#39;&quot;DeepSeek&quot; panic&#39;</span>),</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>        (datetime(<span class="dv">2025</span>,<span class="dv">4</span>,<span class="dv">15</span>), <span class="st">&#39;Tarrifs Restrictions&#39;</span>)]</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>google<span class="op">=</span>[(datetime(<span class="dv">2025</span>,<span class="dv">5</span>,<span class="dv">14</span>), <span class="st">&#39;Gemini 2.5 Pro &amp; Flash + Deep Think Mode&#39;</span>),</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>        (datetime(<span class="dv">2025</span>,<span class="dv">3</span>,<span class="dv">18</span>), <span class="st">&#39;Google buys cybersecurity firm Wiz&#39;</span>)]</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>meta<span class="op">=</span>[(datetime(<span class="dv">2025</span>,<span class="dv">9</span>,<span class="dv">25</span>), <span class="st">&#39;Ray-Ban Meta Display Glasses &amp; Neural Wristband&#39;</span>),</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>      (datetime(<span class="dv">2025</span>,<span class="dv">9</span>,<span class="dv">30</span>), <span class="st">&#39;Google buys Rivos, internal production of AI chips&#39;</span>)]</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>microsoft<span class="op">=</span>[(datetime(<span class="dv">2025</span>,<span class="dv">1</span>,<span class="dv">3</span>), <span class="st">&#39;$80 billion investment in AI data centers&#39;</span>),</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>           (datetime(<span class="dv">2025</span>,<span class="dv">9</span>,<span class="dv">27</span>), <span class="st">&#39;$19.4 billion agreement for 100 000 NVIDIA GB300 GPUs&#39;</span>),</span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>           (datetime(<span class="dv">2025</span>,<span class="dv">7</span>,<span class="dv">2</span>), <span class="st">&#39;Job cuts announced amid heavy AI infrastructure spending&#39;</span>),</span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>           (datetime(<span class="dv">2025</span>,<span class="dv">9</span>,<span class="dv">15</span>), <span class="st">&#39;Dividend boost signals confidence to investors&#39;</span>)]</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot</span></span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>fig<span class="op">=</span>plt.figure(figsize<span class="op">=</span>(<span class="dv">20</span>,<span class="dv">16</span>))</span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>ax1<span class="op">=</span>fig.add_subplot(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">1</span>)</span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>ax2<span class="op">=</span>fig.add_subplot(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>)</span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a>ax3<span class="op">=</span>fig.add_subplot(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a>ax4<span class="op">=</span>fig.add_subplot(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">4</span>)</span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">&#39;NVDA&#39;</span>].plot(ax<span class="op">=</span>ax1, color<span class="op">=</span><span class="st">&#39;green&#39;</span>, label<span class="op">=</span><span class="st">&#39;Nvidia&#39;</span>, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Price&#39;</span>)</span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">&#39;GOOGL&#39;</span>].plot(ax<span class="op">=</span>ax2, color<span class="op">=</span><span class="st">&#39;red&#39;</span>, label<span class="op">=</span><span class="st">&#39;Google&#39;</span>, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Price&#39;</span>)</span>
+<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">&#39;META&#39;</span>].plot(ax<span class="op">=</span>ax3, color<span class="op">=</span><span class="st">&#39;cornflowerblue&#39;</span>, label<span class="op">=</span><span class="st">&#39;Meta&#39;</span>, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Price&#39;</span>)</span>
+<span id="cb37-25"><a href="#cb37-25" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">&#39;MSFT&#39;</span>].plot(ax<span class="op">=</span>ax4, color<span class="op">=</span><span class="st">&#39;black&#39;</span>, label<span class="op">=</span><span class="st">&#39;Microsoft&#39;</span>, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Price&#39;</span>)</span>
+<span id="cb37-26"><a href="#cb37-26" aria-hidden="true" tabindex="-1"></a>ax1.legend()</span>
+<span id="cb37-27"><a href="#cb37-27" aria-hidden="true" tabindex="-1"></a>ax2.legend()</span>
+<span id="cb37-28"><a href="#cb37-28" aria-hidden="true" tabindex="-1"></a>ax3.legend()</span>
+<span id="cb37-29"><a href="#cb37-29" aria-hidden="true" tabindex="-1"></a>ax4.legend()</span>
+<span id="cb37-30"><a href="#cb37-30" aria-hidden="true" tabindex="-1"></a>ax1.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb37-31"><a href="#cb37-31" aria-hidden="true" tabindex="-1"></a>ax2.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb37-32"><a href="#cb37-32" aria-hidden="true" tabindex="-1"></a>ax3.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb37-33"><a href="#cb37-33" aria-hidden="true" tabindex="-1"></a>ax4.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb37-34"><a href="#cb37-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-35"><a href="#cb37-35" aria-hidden="true" tabindex="-1"></a><span class="co">#Annotations</span></span>
+<span id="cb37-36"><a href="#cb37-36" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> date, announcement <span class="kw">in</span> nvidia:</span>
+<span id="cb37-37"><a href="#cb37-37" aria-hidden="true" tabindex="-1"></a>  ax1.annotate(announcement,</span>
+<span id="cb37-38"><a href="#cb37-38" aria-hidden="true" tabindex="-1"></a>               xy<span class="op">=</span>(date, df1[<span class="st">&#39;NVDA&#39;</span>].asof(date)),</span>
+<span id="cb37-39"><a href="#cb37-39" aria-hidden="true" tabindex="-1"></a>               xytext<span class="op">=</span>(date, df1[<span class="st">&#39;NVDA&#39;</span>].asof(date)<span class="op">+</span><span class="dv">32</span>),</span>
+<span id="cb37-40"><a href="#cb37-40" aria-hidden="true" tabindex="-1"></a>               arrowprops<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">&#39;black&#39;</span>,</span>
+<span id="cb37-41"><a href="#cb37-41" aria-hidden="true" tabindex="-1"></a>                               width<span class="op">=</span><span class="fl">0.5</span>,</span>
+<span id="cb37-42"><a href="#cb37-42" aria-hidden="true" tabindex="-1"></a>                               headwidth<span class="op">=</span><span class="dv">6</span>,</span>
+<span id="cb37-43"><a href="#cb37-43" aria-hidden="true" tabindex="-1"></a>                               headlength<span class="op">=</span><span class="dv">15</span>))</span>
+<span id="cb37-44"><a href="#cb37-44" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> date, announcement <span class="kw">in</span> google:</span>
+<span id="cb37-45"><a href="#cb37-45" aria-hidden="true" tabindex="-1"></a>  ax2.annotate(announcement,</span>
+<span id="cb37-46"><a href="#cb37-46" aria-hidden="true" tabindex="-1"></a>               xy<span class="op">=</span>(date, df1[<span class="st">&#39;GOOGL&#39;</span>].asof(date)),</span>
+<span id="cb37-47"><a href="#cb37-47" aria-hidden="true" tabindex="-1"></a>               xytext<span class="op">=</span>(date, df1[<span class="st">&#39;GOOGL&#39;</span>].asof(date)<span class="op">+</span><span class="dv">32</span>),</span>
+<span id="cb37-48"><a href="#cb37-48" aria-hidden="true" tabindex="-1"></a>               arrowprops<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">&#39;black&#39;</span>,</span>
+<span id="cb37-49"><a href="#cb37-49" aria-hidden="true" tabindex="-1"></a>                               width<span class="op">=</span><span class="fl">0.5</span>,</span>
+<span id="cb37-50"><a href="#cb37-50" aria-hidden="true" tabindex="-1"></a>                               headwidth<span class="op">=</span><span class="dv">6</span>,</span>
+<span id="cb37-51"><a href="#cb37-51" aria-hidden="true" tabindex="-1"></a>                               headlength<span class="op">=</span><span class="dv">15</span>))</span>
+<span id="cb37-52"><a href="#cb37-52" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> date, announcement <span class="kw">in</span> meta:</span>
+<span id="cb37-53"><a href="#cb37-53" aria-hidden="true" tabindex="-1"></a>  ax3.annotate(announcement,</span>
+<span id="cb37-54"><a href="#cb37-54" aria-hidden="true" tabindex="-1"></a>               xy<span class="op">=</span>(date, df1[<span class="st">&#39;META&#39;</span>].asof(date)),</span>
+<span id="cb37-55"><a href="#cb37-55" aria-hidden="true" tabindex="-1"></a>               xytext<span class="op">=</span>(date, df1[<span class="st">&#39;META&#39;</span>].asof(date)<span class="op">+</span><span class="dv">32</span>),</span>
+<span id="cb37-56"><a href="#cb37-56" aria-hidden="true" tabindex="-1"></a>               arrowprops<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">&#39;black&#39;</span>,</span>
+<span id="cb37-57"><a href="#cb37-57" aria-hidden="true" tabindex="-1"></a>                               width<span class="op">=</span><span class="fl">0.5</span>,</span>
+<span id="cb37-58"><a href="#cb37-58" aria-hidden="true" tabindex="-1"></a>                               headwidth<span class="op">=</span><span class="dv">6</span>,</span>
+<span id="cb37-59"><a href="#cb37-59" aria-hidden="true" tabindex="-1"></a>                               headlength<span class="op">=</span><span class="dv">15</span>))</span>
+<span id="cb37-60"><a href="#cb37-60" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> date, announcement <span class="kw">in</span> microsoft:</span>
+<span id="cb37-61"><a href="#cb37-61" aria-hidden="true" tabindex="-1"></a>  ax4.annotate(announcement,</span>
+<span id="cb37-62"><a href="#cb37-62" aria-hidden="true" tabindex="-1"></a>               xy<span class="op">=</span>(date, df1[<span class="st">&#39;MSFT&#39;</span>].asof(date)),</span>
+<span id="cb37-63"><a href="#cb37-63" aria-hidden="true" tabindex="-1"></a>               xytext<span class="op">=</span>(date, df1[<span class="st">&#39;MSFT&#39;</span>].asof(date)<span class="op">+</span><span class="dv">32</span>),</span>
+<span id="cb37-64"><a href="#cb37-64" aria-hidden="true" tabindex="-1"></a>               arrowprops<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">&#39;black&#39;</span>,</span>
+<span id="cb37-65"><a href="#cb37-65" aria-hidden="true" tabindex="-1"></a>                               width<span class="op">=</span><span class="fl">0.5</span>,</span>
+<span id="cb37-66"><a href="#cb37-66" aria-hidden="true" tabindex="-1"></a>                               headwidth<span class="op">=</span><span class="dv">6</span>,</span>
+<span id="cb37-67"><a href="#cb37-67" aria-hidden="true" tabindex="-1"></a>                               headlength<span class="op">=</span><span class="dv">15</span>))</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_467df86039db42b4b548f4948f6db916/be91d8b05f8bbdf839ae3e42dbe5a934d95f2104.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="110"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:0}"
+id="XoT4AGt2ADLX" data-outputId="1414643a-8e6c-4dd7-909a-cd6208a467aa">
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Daily Returns</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>fig<span class="op">=</span>plt.figure(figsize<span class="op">=</span>(<span class="dv">20</span>,<span class="dv">16</span>))</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>ax1<span class="op">=</span>fig.add_subplot(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">1</span>)</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>ax2<span class="op">=</span>fig.add_subplot(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>)</span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>ax3<span class="op">=</span>fig.add_subplot(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>ax4<span class="op">=</span>fig.add_subplot(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">4</span>)</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>df1_returns[<span class="st">&#39;NVDA&#39;</span>].plot(ax<span class="op">=</span>ax1, color<span class="op">=</span><span class="st">&#39;green&#39;</span>, label<span class="op">=</span><span class="st">&#39;Nvidia&#39;</span>, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Returns&#39;</span>)</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>df1_returns[<span class="st">&#39;GOOGL&#39;</span>].plot(ax<span class="op">=</span>ax2, color<span class="op">=</span><span class="st">&#39;red&#39;</span>, label<span class="op">=</span><span class="st">&#39;Google&#39;</span>, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Returns&#39;</span>)</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>df1_returns[<span class="st">&#39;META&#39;</span>].plot(ax<span class="op">=</span>ax3, color<span class="op">=</span><span class="st">&#39;cornflowerblue&#39;</span>, label<span class="op">=</span><span class="st">&#39;Meta&#39;</span>, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Returns&#39;</span>)</span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>df1_returns[<span class="st">&#39;MSFT&#39;</span>].plot(ax<span class="op">=</span>ax4, color<span class="op">=</span><span class="st">&#39;black&#39;</span>, label<span class="op">=</span><span class="st">&#39;Microsoft&#39;</span>, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Returns&#39;</span>)</span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>ax1.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>ax2.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a>ax3.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a>ax4.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a>ax1.legend()</span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a>ax2.legend()</span>
+<span id="cb38-18"><a href="#cb38-18" aria-hidden="true" tabindex="-1"></a>ax3.legend()</span>
+<span id="cb38-19"><a href="#cb38-19" aria-hidden="true" tabindex="-1"></a>ax4.legend()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="110">
+<pre><code>&lt;matplotlib.legend.Legend at 0x7ee115503170&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_467df86039db42b4b548f4948f6db916/4ad5f332f61519377a9ff539ba6a680bc790eed7.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="111"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:0}"
+id="gdkHv2l-JMd6" data-outputId="b1466ba0-9478-4a75-fa83-235695949a47">
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Cumulative Returns</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>fig<span class="op">=</span>plt.figure(figsize<span class="op">=</span>(<span class="dv">20</span>,<span class="dv">6</span>))</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>ax1<span class="op">=</span>fig.add_subplot(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>)</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>df1_cum_returns.plot(ax<span class="op">=</span>ax1, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Cumulative Return Percentage&#39;</span>, color<span class="op">=</span>[<span class="st">&#39;green&#39;</span>, <span class="st">&#39;red&#39;</span>, <span class="st">&#39;cornflowerblue&#39;</span>, <span class="st">&#39;black&#39;</span>])</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>ax1.set_yticks([<span class="op">-</span><span class="fl">0.3</span>,<span class="op">-</span><span class="fl">0.2</span>,<span class="op">-</span><span class="fl">0.1</span>,<span class="dv">0</span>,<span class="fl">0.1</span>,<span class="fl">0.2</span>,<span class="fl">0.3</span>])</span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>ax1.set_yticklabels([<span class="st">&#39;-30%&#39;</span>, <span class="st">&#39;-20%&#39;</span>, <span class="st">&#39;-10%&#39;</span>, <span class="st">&#39;0%&#39;</span>, <span class="st">&#39;10%&#39;</span>, <span class="st">&#39;20%&#39;</span>, <span class="st">&#39;30%&#39;</span>])</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>ax1.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">&#39;Cumulative Returns&#39;</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="111">
+<pre><code>Text(0.5, 0.98, &#39;Cumulative Returns&#39;)</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_467df86039db42b4b548f4948f6db916/f129329dea12c47521e839a8d6d5a2073e590220.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="112"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:0}"
+id="Lb1xQK-lw2jW" data-outputId="76a89182-f793-452d-82a7-d642dc7869ee">
+<div class="sourceCode" id="cb42"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Rolling Mean &amp; STD</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>fig<span class="op">=</span>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">26</span>))</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>ax1<span class="op">=</span>fig.add_subplot(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">1</span>)</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>ax2<span class="op">=</span>fig.add_subplot(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">2</span>)</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>ax3<span class="op">=</span>fig.add_subplot(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">3</span>)</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>ax4<span class="op">=</span>fig.add_subplot(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">4</span>)</span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">&#39;Rolling Mean with Rolling Standard Deviation Interval&#39;</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>fig.tight_layout(pad<span class="op">=</span><span class="fl">3.8</span>)</span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>df1_rolling_mean[<span class="st">&#39;NVDA&#39;</span>].plot(ax<span class="op">=</span>ax1, color<span class="op">=</span><span class="st">&#39;green&#39;</span>, label<span class="op">=</span><span class="st">&#39;Nvidia&#39;</span>, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Rolling Mean Price&#39;</span>)</span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>df1_rolling_mean[<span class="st">&#39;GOOGL&#39;</span>].plot(ax<span class="op">=</span>ax2, color<span class="op">=</span><span class="st">&#39;red&#39;</span>, label<span class="op">=</span><span class="st">&#39;Google&#39;</span>, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Rolling Mean Price&#39;</span>)</span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a>df1_rolling_mean[<span class="st">&#39;META&#39;</span>].plot(ax<span class="op">=</span>ax3, color<span class="op">=</span><span class="st">&#39;blue&#39;</span>, label<span class="op">=</span><span class="st">&#39;Meta&#39;</span>, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Rolling Mean Price&#39;</span>)</span>
+<span id="cb42-13"><a href="#cb42-13" aria-hidden="true" tabindex="-1"></a>df1_rolling_mean[<span class="st">&#39;MSFT&#39;</span>].plot(ax<span class="op">=</span>ax4, color<span class="op">=</span><span class="st">&#39;black&#39;</span>, label<span class="op">=</span><span class="st">&#39;Microsoft&#39;</span>, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Rolling Mean Price&#39;</span>)</span>
+<span id="cb42-14"><a href="#cb42-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-15"><a href="#cb42-15" aria-hidden="true" tabindex="-1"></a>ax1.legend(loc<span class="op">=</span><span class="st">&#39;upper left&#39;</span>)</span>
+<span id="cb42-16"><a href="#cb42-16" aria-hidden="true" tabindex="-1"></a>ax2.legend(loc<span class="op">=</span><span class="st">&#39;upper left&#39;</span>)</span>
+<span id="cb42-17"><a href="#cb42-17" aria-hidden="true" tabindex="-1"></a>ax3.legend(loc<span class="op">=</span><span class="st">&#39;upper left&#39;</span>)</span>
+<span id="cb42-18"><a href="#cb42-18" aria-hidden="true" tabindex="-1"></a>ax4.legend(loc<span class="op">=</span><span class="st">&#39;upper left&#39;</span>)</span>
+<span id="cb42-19"><a href="#cb42-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-20"><a href="#cb42-20" aria-hidden="true" tabindex="-1"></a>ax1.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb42-21"><a href="#cb42-21" aria-hidden="true" tabindex="-1"></a>ax2.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb42-22"><a href="#cb42-22" aria-hidden="true" tabindex="-1"></a>ax3.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb42-23"><a href="#cb42-23" aria-hidden="true" tabindex="-1"></a>ax4.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb42-24"><a href="#cb42-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-25"><a href="#cb42-25" aria-hidden="true" tabindex="-1"></a>ax1.fill_between(df1_rolling_std[<span class="st">&#39;NVDA&#39;</span>].index,</span>
+<span id="cb42-26"><a href="#cb42-26" aria-hidden="true" tabindex="-1"></a>                 df1_rolling_mean[<span class="st">&#39;NVDA&#39;</span>]<span class="op">-</span>df1_rolling_std[<span class="st">&#39;NVDA&#39;</span>],</span>
+<span id="cb42-27"><a href="#cb42-27" aria-hidden="true" tabindex="-1"></a>                 df1_rolling_mean[<span class="st">&#39;NVDA&#39;</span>]<span class="op">+</span>df1_rolling_std[<span class="st">&#39;NVDA&#39;</span>],</span>
+<span id="cb42-28"><a href="#cb42-28" aria-hidden="true" tabindex="-1"></a>                 color<span class="op">=</span><span class="st">&#39;lightgreen&#39;</span>,</span>
+<span id="cb42-29"><a href="#cb42-29" aria-hidden="true" tabindex="-1"></a>                 alpha<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb42-30"><a href="#cb42-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-31"><a href="#cb42-31" aria-hidden="true" tabindex="-1"></a>ax2.fill_between(df1_rolling_std[<span class="st">&#39;GOOGL&#39;</span>].index,</span>
+<span id="cb42-32"><a href="#cb42-32" aria-hidden="true" tabindex="-1"></a>                 df1_rolling_mean[<span class="st">&#39;GOOGL&#39;</span>]<span class="op">-</span>df1_rolling_std[<span class="st">&#39;GOOGL&#39;</span>],</span>
+<span id="cb42-33"><a href="#cb42-33" aria-hidden="true" tabindex="-1"></a>                 df1_rolling_mean[<span class="st">&#39;GOOGL&#39;</span>]<span class="op">+</span>df1_rolling_std[<span class="st">&#39;GOOGL&#39;</span>],</span>
+<span id="cb42-34"><a href="#cb42-34" aria-hidden="true" tabindex="-1"></a>                 color<span class="op">=</span><span class="st">&#39;lightsalmon&#39;</span>,</span>
+<span id="cb42-35"><a href="#cb42-35" aria-hidden="true" tabindex="-1"></a>                 alpha<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb42-36"><a href="#cb42-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-37"><a href="#cb42-37" aria-hidden="true" tabindex="-1"></a>ax3.fill_between(df1_rolling_std[<span class="st">&#39;META&#39;</span>].index,</span>
+<span id="cb42-38"><a href="#cb42-38" aria-hidden="true" tabindex="-1"></a>                 df1_rolling_mean[<span class="st">&#39;META&#39;</span>]<span class="op">-</span>df1_rolling_std[<span class="st">&#39;META&#39;</span>],</span>
+<span id="cb42-39"><a href="#cb42-39" aria-hidden="true" tabindex="-1"></a>                 df1_rolling_mean[<span class="st">&#39;META&#39;</span>]<span class="op">+</span>df1_rolling_std[<span class="st">&#39;META&#39;</span>],</span>
+<span id="cb42-40"><a href="#cb42-40" aria-hidden="true" tabindex="-1"></a>                 color<span class="op">=</span><span class="st">&#39;cornflowerblue&#39;</span>,</span>
+<span id="cb42-41"><a href="#cb42-41" aria-hidden="true" tabindex="-1"></a>                 alpha<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb42-42"><a href="#cb42-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-43"><a href="#cb42-43" aria-hidden="true" tabindex="-1"></a>ax4.fill_between(df1_rolling_std[<span class="st">&#39;MSFT&#39;</span>].index,</span>
+<span id="cb42-44"><a href="#cb42-44" aria-hidden="true" tabindex="-1"></a>                 df1_rolling_mean[<span class="st">&#39;MSFT&#39;</span>]<span class="op">-</span>df1_rolling_std[<span class="st">&#39;MSFT&#39;</span>],</span>
+<span id="cb42-45"><a href="#cb42-45" aria-hidden="true" tabindex="-1"></a>                 df1_rolling_mean[<span class="st">&#39;MSFT&#39;</span>]<span class="op">+</span>df1_rolling_std[<span class="st">&#39;MSFT&#39;</span>],</span>
+<span id="cb42-46"><a href="#cb42-46" aria-hidden="true" tabindex="-1"></a>                 color<span class="op">=</span><span class="st">&#39;lightslategray&#39;</span>,</span>
+<span id="cb42-47"><a href="#cb42-47" aria-hidden="true" tabindex="-1"></a>                 alpha<span class="op">=</span><span class="fl">0.8</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="112">
+<pre><code>&lt;matplotlib.collections.FillBetweenPolyCollection at 0x7ee11d993b60&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_467df86039db42b4b548f4948f6db916/3a4650774e5a15a08eb895450dd1f8f4ab7343b4.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="113"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:0}"
+id="FyPAsh7vs88Q" data-outputId="ca094fc4-7c42-4950-fde7-2ed3fb1984a7">
+<div class="sourceCode" id="cb44"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Outliers in returns</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>fig<span class="op">=</span>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">25</span>))</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>ax1<span class="op">=</span>fig.add_subplot(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">1</span>)</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>ax2<span class="op">=</span>fig.add_subplot(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">2</span>)</span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>ax3<span class="op">=</span>fig.add_subplot(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">3</span>)</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>ax4<span class="op">=</span>fig.add_subplot(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">4</span>)</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">&#39;Outliers in Returns&#39;</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>fig.tight_layout(pad<span class="op">=</span><span class="fl">3.8</span>)</span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>df1_returns, x<span class="op">=</span>df1_returns.index, y<span class="op">=</span><span class="st">&#39;NVDA&#39;</span>, ax<span class="op">=</span>ax1, color<span class="op">=</span>[<span class="st">&#39;green&#39;</span>,<span class="st">&#39;orange&#39;</span>], hue<span class="op">=</span>df1_returns_outliers[<span class="st">&#39;NVDA&#39;</span>])</span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>ax1.legend(loc<span class="op">=</span><span class="st">&#39;upper left&#39;</span>)</span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>df1_returns, x<span class="op">=</span>df1_returns.index, y<span class="op">=</span><span class="st">&#39;GOOGL&#39;</span>, ax<span class="op">=</span>ax2, color<span class="op">=</span><span class="st">&#39;green&#39;</span>, hue<span class="op">=</span>df1_returns_outliers[<span class="st">&#39;GOOGL&#39;</span>])</span>
+<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a>ax1.legend(loc<span class="op">=</span><span class="st">&#39;upper left&#39;</span>)</span>
+<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>df1_returns, x<span class="op">=</span>df1_returns.index, y<span class="op">=</span><span class="st">&#39;META&#39;</span>, ax<span class="op">=</span>ax3, color<span class="op">=</span><span class="st">&#39;green&#39;</span>, hue<span class="op">=</span>df1_returns_outliers[<span class="st">&#39;META&#39;</span>])</span>
+<span id="cb44-15"><a href="#cb44-15" aria-hidden="true" tabindex="-1"></a>ax1.legend(loc<span class="op">=</span><span class="st">&#39;upper left&#39;</span>)</span>
+<span id="cb44-16"><a href="#cb44-16" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>df1_returns, x<span class="op">=</span>df1_returns.index, y<span class="op">=</span><span class="st">&#39;MSFT&#39;</span>, ax<span class="op">=</span>ax4, color<span class="op">=</span><span class="st">&#39;green&#39;</span>, hue<span class="op">=</span>df1_returns_outliers[<span class="st">&#39;MSFT&#39;</span>])</span>
+<span id="cb44-17"><a href="#cb44-17" aria-hidden="true" tabindex="-1"></a>ax1.legend(loc<span class="op">=</span><span class="st">&#39;upper left&#39;</span>)</span>
+<span id="cb44-18"><a href="#cb44-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-19"><a href="#cb44-19" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">&#39;Outliers for Nvidia&#39;</span>)</span>
+<span id="cb44-20"><a href="#cb44-20" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">&#39;Outliers for Google&#39;</span>)</span>
+<span id="cb44-21"><a href="#cb44-21" aria-hidden="true" tabindex="-1"></a>ax3.set_title(<span class="st">&#39;Outliers for Meta&#39;</span>)</span>
+<span id="cb44-22"><a href="#cb44-22" aria-hidden="true" tabindex="-1"></a>ax4.set_title(<span class="st">&#39;Outliers for Microsoft&#39;</span>)</span>
+<span id="cb44-23"><a href="#cb44-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-24"><a href="#cb44-24" aria-hidden="true" tabindex="-1"></a>ax1.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb44-25"><a href="#cb44-25" aria-hidden="true" tabindex="-1"></a>ax2.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb44-26"><a href="#cb44-26" aria-hidden="true" tabindex="-1"></a>ax3.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb44-27"><a href="#cb44-27" aria-hidden="true" tabindex="-1"></a>ax4.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_467df86039db42b4b548f4948f6db916/f5a85ec6df753a56055da67ba36eb795b8616958.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="Izi53eF6j2sw">
+<p>###<strong>Statistical Characterisics</strong></p>
+</div>
+<div class="cell code" data-execution_count="114"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:0}"
+id="WrNR_k3BkJAs" data-outputId="492892d0-82ba-4403-90f4-7031b1469455">
+<div class="sourceCode" id="cb45"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Distribution Plots</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>fig<span class="op">=</span>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">30</span>))</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>ax1<span class="op">=</span>fig.add_subplot(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">1</span>)</span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>ax2<span class="op">=</span>fig.add_subplot(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">2</span>)</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>ax3<span class="op">=</span>fig.add_subplot(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">3</span>)</span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>ax4<span class="op">=</span>fig.add_subplot(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">4</span>)</span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">&#39;Returns Distribution Plots&#39;</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>fig.tight_layout(pad<span class="op">=</span><span class="fl">3.8</span>)</span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>sns.histplot(data<span class="op">=</span>df1_returns, ax<span class="op">=</span>ax1, bins<span class="op">=</span><span class="dv">30</span>, x<span class="op">=</span><span class="st">&#39;NVDA&#39;</span>, color<span class="op">=</span><span class="st">&#39;green&#39;</span>, kde<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>sns.histplot(data<span class="op">=</span>df1_returns, ax<span class="op">=</span>ax2, bins<span class="op">=</span><span class="dv">30</span>, x<span class="op">=</span><span class="st">&#39;GOOGL&#39;</span>, color<span class="op">=</span><span class="st">&#39;red&#39;</span>, kde<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a>sns.histplot(data<span class="op">=</span>df1_returns, ax<span class="op">=</span>ax3, bins<span class="op">=</span><span class="dv">30</span>, x<span class="op">=</span><span class="st">&#39;META&#39;</span>, color<span class="op">=</span><span class="st">&#39;cornflowerblue&#39;</span>, kde<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a>sns.histplot(data<span class="op">=</span>df1_returns, ax<span class="op">=</span>ax4, bins<span class="op">=</span><span class="dv">30</span>, x<span class="op">=</span><span class="st">&#39;MSFT&#39;</span>, color<span class="op">=</span><span class="st">&#39;black&#39;</span>, kde<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">&#39;Nvidia&#39;</span>)</span>
+<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">&#39;Google&#39;</span>)</span>
+<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a>ax3.set_title(<span class="st">&#39;Meta&#39;</span>)</span>
+<span id="cb45-19"><a href="#cb45-19" aria-hidden="true" tabindex="-1"></a>ax4.set_title(<span class="st">&#39;Microsoft&#39;</span>)</span>
+<span id="cb45-20"><a href="#cb45-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-21"><a href="#cb45-21" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="st">&#39;Returns&#39;</span>)</span>
+<span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a>ax2.set_xlabel(<span class="st">&#39;Returns&#39;</span>)</span>
+<span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a>ax3.set_xlabel(<span class="st">&#39;Returns&#39;</span>)</span>
+<span id="cb45-24"><a href="#cb45-24" aria-hidden="true" tabindex="-1"></a>ax4.set_xlabel(<span class="st">&#39;Returns&#39;</span>)</span>
+<span id="cb45-25"><a href="#cb45-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-26"><a href="#cb45-26" aria-hidden="true" tabindex="-1"></a>ax1.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb45-27"><a href="#cb45-27" aria-hidden="true" tabindex="-1"></a>ax2.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb45-28"><a href="#cb45-28" aria-hidden="true" tabindex="-1"></a>ax3.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb45-29"><a href="#cb45-29" aria-hidden="true" tabindex="-1"></a>ax4.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_467df86039db42b4b548f4948f6db916/b4ec262bc0c2af90907abfe8ed73ee88015498be.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="115"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:0}"
+id="k9PEfZb_kn8S" data-outputId="c5227743-f9a9-4c89-8ec2-c496dfc174cd">
+<div class="sourceCode" id="cb46"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Correlation</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>fig<span class="op">=</span>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">15</span>))</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>ax1<span class="op">=</span>fig.add_subplot(<span class="dv">3</span>,<span class="dv">1</span>,<span class="dv">1</span>)</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>ax2<span class="op">=</span>fig.add_subplot(<span class="dv">3</span>,<span class="dv">1</span>,<span class="dv">2</span>)</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>ax3<span class="op">=</span>fig.add_subplot(<span class="dv">3</span>,<span class="dv">1</span>,<span class="dv">3</span>)</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">&#39;Correlation Matrix&#39;</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>fig.tight_layout(pad<span class="op">=</span><span class="fl">3.8</span>)</span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>sns.heatmap(df1_returns.corr(), ax<span class="op">=</span>ax1, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">&#39;coolwarm&#39;</span>)</span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">&#39;Returns Correlation Matrix&#39;</span>)</span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>sns.heatmap(df1_cum_returns.corr(), ax<span class="op">=</span>ax2, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">&#39;coolwarm&#39;</span>)</span>
+<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">&#39;Cumulative Returns Matrix&#39;</span>)</span>
+<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a>sns.heatmap(data<span class="op">=</span>df2.corr(), ax<span class="op">=</span>ax3, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">&#39;coolwarm&#39;</span>)</span>
+<span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a>ax3.set_title(<span class="st">&#39;Volume Correlation Matrix&#39;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="115">
+<pre><code>Text(0.5, 1.0, &#39;Volume Correlation Matrix&#39;)</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_467df86039db42b4b548f4948f6db916/521b2c0511aeab42d1c1abac786f4ef4231a175e.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="116"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:0}"
+id="yIrRimzCrbD_" data-outputId="fb38eb9f-5cee-422d-e412-eaa3f09d18e9">
+<div class="sourceCode" id="cb48"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Autocorrelation</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>fig<span class="op">=</span>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">5</span>))</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>ax1<span class="op">=</span>fig.add_subplot(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>)</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>ax1.set_facecolor(<span class="st">&#39;lightgrey&#39;</span>)</span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>sns.barplot(ax<span class="op">=</span>ax1, data<span class="op">=</span>df_autocorr)</span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">&#39;Autocorrelation with diffrent bins&#39;</span>)</span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a>ax1.set_ylabel(<span class="st">&#39;Autocorrelation Coefficient&#39;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="116">
+<pre><code>Text(0, 0.5, &#39;Autocorrelation Coefficient&#39;)</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_467df86039db42b4b548f4948f6db916/d853113de1cf544f5580a50f8c803f87368afef2.png" /></p>
+</div>
+</div>
+<section id="step-7-summary-and-insights" class="cell markdown"
+id="62q92aye3NnP">
+<h2><strong>Step 7: Summary and Insights</strong></h2>
+<p>In this section, we summarize key findings from the analysis:</p>
+<ul>
+<li>Identify which stocks are most volatile.</li>
+<li>Note correlations between stocks in the AI sector.</li>
+<li>Highlight any unusual patterns or outliers.</li>
+</ul>
+<p>The summary is mathematically grounded, avoiding financial
+speculation.</p>
+</section>
+<div class="cell markdown" id="R5hxSJvT3wZa">
+<p>While the code is feeding daily data on this project, <strong>as of
+October 6, 2025</strong> we have the following results:</p>
+<ol>
+<li>The most Cumulative Returns are given by the following order:
+<strong>Nvidia (with over 30%)</strong>, Google, Microsoft, Meta.</li>
+<li>Nvidia had intense instability in January, February and April.
+Google had intense instability in April. Meta had intense instability
+from mid March up to May and lastly Microsoft instability's period was
+from April up to mid May.</li>
+<li><strong>Common outliers</strong> for all stocks occured on
+<strong>April</strong>.</li>
+<li>The biggest correlation coefficient for returns is
+<strong>0.68</strong> between <strong>Microsoft and Meta</strong>
+followed by 0.67 between Microsoft and Nvidia</li>
+<li><strong>Biggest</strong> Volume correlation coefficient is
+<strong>0.78</strong> for Microsoft and Meta while the
+<strong>smallest</strong> one is <strong>0.18</strong> for Nvidia and
+Google.</li>
+<li>For this analysis the autocorrelation was computed separately for
+each stock however the plot is giving us the mean autocorreleation for
+each bin (Days 1-10). <strong>Results</strong> are prices from two days
+ago are mildly related to today’s prices and prices from three days ago
+tend to move slightly in the opposite direction of today’s prices.</li>
+<li>Overall, the analysis suggests that while all four tech stocks
+exhibit moderate co-movement, Nvidia remains the most volatile and
+highest-performing asset in 2025 so far. Microsoft and Meta show strong
+mutual dependence in both returns and trading activity, indicating
+shared market dynamics.</li>
+</ol>
+</div>
+</body>
+</html>
