@@ -42,7 +42,7 @@ yFinance
 Google Colab / Jupyter Notebook  
 
 
-**Files** 
+**Files**  
 EDA_Yahoo_Finance.ipynb: Full notebook with code and explanations.  
 EDA_Yahoo_Finance.html: Rendered static version.  
 /images/: Key plots for quick preview.  
