@@ -19,13 +19,13 @@ Investigate short-term autocorrelation patterns using lag analysis.
 
 
 **Methodology**  
-**1)**Data import and setup (automatically updated until the current date)  
-**2)**Data Inspection  
-**3)**Data Cleaning  
-**4)**Feature Engineering  
-**5)**Statistical Analysis  
-**6)**Visualization using Matplotlib and Seaborn  
-**7)**Conclusion  
+**1)** Data import and setup (automatically updated until the current date)  
+**2)** Data Inspection  
+**3)** Data Cleaning  
+**4)** Feature Engineering  
+**5)** Statistical Analysis  
+**6)** Visualization using Matplotlib and Seaborn  
+**7)** Conclusion  
 
 
 **Key Insights (as of October 6, 2025)**  
